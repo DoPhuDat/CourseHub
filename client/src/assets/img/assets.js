@@ -8,6 +8,7 @@ import microsoft_logo from './microsoft_logo.svg'
 import walmart_logo from './walmart_logo.svg'
 import accenture_logo from './accenture_logo.svg'
 import adobe_logo from './adobe_logo.svg'
+import slack_logo from './slack_logo.svg'
 import paypal_logo from './paypal_logo.svg'
 import course_1_thumbnail from './course_1.png'
 import course_2_thumbnail from './course_2.png'
@@ -58,6 +59,7 @@ export const assets = {
     course_3_thumbnail,
     course_4_thumbnail,
     star,
+    slack_logo,
     star_blank,
     profile_img_1,
     profile_img_2,
@@ -106,21 +108,21 @@ export const dummyTestimonial = [
         name: 'Donald Jackman',
         role: 'SWE 1 @ Amazon',
         image: assets.profile_img_1,
-        rating: 5,
+        rating: Math.floor(Math.random() * (5 - 3 + 1)) + 3, 
         feedback: 'I\'ve been using Imagify for nearly two years, primarily for Instagram, and it has been incredibly user-friendly, making my work much easier.',
     },
     {
         name: 'Richard Nelson',
         role: 'SWE 2 @ Samsung',
         image: assets.profile_img_2,
-        rating: 4,
+        rating: Math.floor(Math.random() * (5 - 3 + 1)) + 3, 
         feedback: 'I\'ve been using Imagify for nearly two years, primarily for Instagram, and it has been incredibly user-friendly, making my work much easier.',
     },
     {
         name: 'James Washington',
         role: 'SWE 2 @ Google',
         image: assets.profile_img_3,
-        rating: 4.5,
+        rating: Math.floor(Math.random() * (5 - 3 + 1)) + 3, 
         feedback: 'I\'ve been using Imagify for nearly two years, primarily for Instagram, and it has been incredibly user-friendly, making my work much easier.',
     },
 ];
@@ -273,13 +275,7 @@ export const dummyCourses = [
             "user_2qQlvXyr02B4Bq6hT0Gvaa5fT9V",
             "user_2qjlgkAqIMpiR2flWIRzvWKtE0w"
         ],
-        "courseRatings": [
-            {
-                "userId": "user_2qjlgkAqIMpiR2flWIRzvWKtE0w",
-                "rating": 5,
-                "_id": "6773e37360cb0ab974342314"
-            }
-        ],
+        "rating": Math.floor(Math.random() * (5 - 3 + 1)) + 3,  
         "createdAt": "2024-12-17T08:16:53.622Z",
         "updatedAt": "2025-01-02T04:47:44.701Z",
         "__v": 4,
@@ -345,13 +341,7 @@ export const dummyCourses = [
             "user_2qQlvXyr02B4Bq6hT0Gvaa5fT9V",
             "user_2qjlgkAqIMpiR2flWIRzvWKtE0w"
         ],
-        "courseRatings": [
-            {
-                "userId": "user_2qjlgkAqIMpiR2flWIRzvWKtE0w",
-                "rating": 5,
-                "_id": "6776369244daad0f313d81a9"
-            }
-        ],
+       "rating": Math.floor(Math.random() * (5 - 3 + 1)) + 3,  
         "createdAt": "2024-12-17T08:16:53.622Z",
         "updatedAt": "2025-01-02T06:47:54.446Z",
         "__v": 3,
@@ -417,7 +407,7 @@ export const dummyCourses = [
             "user_2qQlvXyr02B4Bq6hT0Gvaa5fT9V",
             "user_2qjlgkAqIMpiR2flWIRzvWKtE0w"
         ],
-        "courseRatings": [],
+        "rating": Math.floor(Math.random() * (5 - 3 + 1)) + 3, 
         "createdAt": "2024-12-27T11:30:00.000Z",
         "updatedAt": "2024-12-31T04:14:49.773Z",
         "__v": 2,
@@ -483,7 +473,7 @@ export const dummyCourses = [
             "user_2qQlvXyr02B4Bq6hT0Gvaa5fT9V",
             "user_2qjlgkAqIMpiR2flWIRzvWKtE0w"
         ],
-        "courseRatings": [],
+       "rating": Math.floor(Math.random() * (5 - 3 + 1)) + 3, 
         "createdAt": "2024-12-17T08:16:53.622Z",
         "updatedAt": "2024-12-31T05:31:27.290Z",
         "__v": 2,
@@ -548,7 +538,7 @@ export const dummyCourses = [
         "enrolledStudents": [
             "user_2qjlgkAqIMpiR2flWIRzvWKtE0w"
         ],
-        "courseRatings": [],
+        "rating": Math.floor(Math.random() * (5 - 3 + 1)) + 3, 
         "createdAt": "2024-12-17T08:16:53.622Z",
         "updatedAt": "2024-12-31T05:32:55.357Z",
         "__v": 1,
@@ -615,13 +605,7 @@ export const dummyCourses = [
             "user_2qQlvXyr02B4Bq6hT0Gvaa5fT9V",
             "user_2qjlgkAqIMpiR2flWIRzvWKtE0w"
         ],
-        "courseRatings": [
-            {
-                "userId": "user_2qjlgkAqIMpiR2flWIRzvWKtE0w",
-                "rating": 5,
-                "_id": "6773acf160cb0ab974342248"
-            }
-        ],
+        "rating": Math.floor(Math.random() * (5 - 3 + 1)) + 3, 
         "createdAt": "2024-12-27T10:00:00.000Z",
         "updatedAt": "2024-12-31T09:57:48.992Z",
         "__v": 3,
@@ -686,7 +670,7 @@ export const dummyCourses = [
         "enrolledStudents": [
             "user_2qjlgkAqIMpiR2flWIRzvWKtE0w"
         ],
-        "courseRatings": [],
+       "rating": Math.floor(Math.random() * (5 - 3 + 1)) + 3, 
         "createdAt": "2024-12-17T08:16:53.622Z",
         "updatedAt": "2025-01-02T06:53:59.753Z",
         "__v": 1,
@@ -751,7 +735,7 @@ export const dummyCourses = [
         "enrolledStudents": [
             "user_2qjlgkAqIMpiR2flWIRzvWKtE0w"
         ],
-        "courseRatings": [],
+        "rating": Math.floor(Math.random() * (5 - 3 + 1)) + 3, 
         "createdAt": "2024-12-17T08:16:53.622Z",
         "updatedAt": "2025-01-02T06:56:13.208Z",
         "__v": 1,

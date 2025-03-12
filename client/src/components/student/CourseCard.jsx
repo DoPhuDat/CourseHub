@@ -16,11 +16,16 @@ const CourseCard = ({course}) => {
       <div className="flex items-center space-x-2">
         <p>4.5</p>
         <div className="flex">
-          {[...Array(5)].map((_, i) => (<img key = {i} src={assets.star} alt=""
-          className="w-3.5 h-3.5"/>)
-        )}
+         {[...Array(5)].map((_, i) => (
+           <img
+              className="h-3"
+              key={i}
+             src={i < Math.floor(course.rating) ? assets.star : assets.star_blank}
+              alt="star"
+            />
+          ))}
         </div>
-        <p className="text-gray-500">22</p>
+        <p className="text-gray-500 mr-3">({(Math.floor(Math.random() * (900 - 500 + 1)) + 500)})</p>
       </div>
       <p className="flex text-base font-semibold text-gray-800">
     {currency}{(course.coursePrice - (course.discount * course.coursePrice / 100)).toFixed(2)}
