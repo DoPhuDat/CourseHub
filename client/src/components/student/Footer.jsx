@@ -15,7 +15,7 @@ export const Footer = () => {
             industry. Lorem Ipsum has been the industry's standard dummy text.
           </p>
         </div>
-        <div className="flex flex-col md:items-center w-full">
+        <div className="hidden md:flex flex-col md:items-center w-full">
           <div className="flex flex-col items-start">
             <h2 className="font-semibold text-white mb-5">Company</h2>
             <ul className="text-sm text-white/80 space-y-2">
@@ -54,7 +54,7 @@ export const Footer = () => {
           </div>
         </div>
       </div>
-      <p className="flex justify-center text-white/50 my-3">
+      <p className="flex justify-center text-white/50 py-3">
         dophudat2003@gmail.com
       </p>
     </footer>
